@@ -6,6 +6,7 @@ class Anime:
         self.episodes = episodes
         self.duration = datetime.time(0, duration)
         self.air_date = datetime.datetime.strptime(air_date, '%b %d, %Y')
+
         if end_date is not None:
             self.end_date = datetime.datetime.strptime(end_date, '%b %d, %Y')
 
